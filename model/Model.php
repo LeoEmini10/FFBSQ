@@ -18,7 +18,7 @@ class Model {
     private $_dbConnexion;
 
     public function __construct() {
-        $this->_dbConnexion = new Database('localhost', 'root', '', 'FFBSQ');
+        $this->_dbConnexion = new Database('localhost', 'root', '', 'ffbsq');
     }
 
     public function getClubList() {

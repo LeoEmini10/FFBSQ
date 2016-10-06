@@ -21,9 +21,9 @@ class Database {
             $this->_database = $database;
         } else {
             $this->_host = 'localhost';
-            $this->_username = 'client';
-            $this->_password = 'client1234';
-            $this->_database = 'panier';
+            $this->_username = 'root';
+            $this->_password = '';
+            $this->_database = 'ffbsq';
         }
         try {
             $this->_connexionDb = new PDO('mysql:host=' . $this->_host . ';dbname=' . $this->_database, $this->_username, $this->_password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8',

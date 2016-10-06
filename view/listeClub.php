@@ -14,7 +14,7 @@
                 <a href="index.php?action=licences&club=<?= $club->getId(); ?>"> Licences du club </a> 
             </div>
         </div>
-<?php endforeach; ?>
+    <?php endforeach; ?>
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -25,5 +25,5 @@
         });
     });
 </script>
-
-
+</body>
+</html>

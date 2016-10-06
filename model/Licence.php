@@ -26,5 +26,4 @@ class Licence {
     public function getIdClub() {
         return $this->idClub;
     }
-
 }

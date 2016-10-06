@@ -33,11 +33,11 @@
             <!-- The justified navigation menu is meant for single line per list item.
                  Multiple lines will require custom code not provided by Bootstrap. -->
             <div class="masthead">
-                <h3 class="text-muted">Project name</h3>
+                <h3 class="text-muted">FFBSQ</h3>
                 <nav>
                     <ul class="nav nav-justified">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Club</a></li>
+                        <li><a href="index.php?action=licences&club=1">Club</a></li>
                         <li><a href="#">Compétition</a></li>
                         <li><a href="#">Downloads</a></li>
  

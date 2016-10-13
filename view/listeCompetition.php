@@ -1,18 +1,13 @@
-<div class="top">
-    <input type="text" id="recherche">
-    <button id="rech" type="button"> Rechercher Club</button>
-
-    <?php
-    //var_dump($db->requete("Select * from livre"));
-    foreach ($competitions as $competition):
-        ?>
+<?php
+//var_dump($db->requete("Select * from livre"));
+foreach ($competitions as $uneCompetition):
+    ?>
+    <div>
         <div>
-            <div>
-                <h4><ins><?= $competition->getDescription(); ?></ins></h4> 
-                <a href="index.php?action=licences&club=<?= $competition->getId(); ?>"> Competitions </a> 
-            </div>
+            <h4><ins><?= $uneCompetition->getDescription(); ?></ins></h4> 
         </div>
-    <?php endforeach; ?>
+    </div>
+<?php endforeach; ?>
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

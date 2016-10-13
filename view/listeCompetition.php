@@ -9,7 +9,17 @@ foreach ($competitions as $uneCompetition):
     </div>
 <?php endforeach; ?>
 </div>
-
+<div class="jumbotron">
+    <form>
+        Dénomination:<br>
+        <input type="text" name="denomination">
+        <br>
+        Date:<br>
+        <input type="date" name="date">
+        <br><br>
+        <input type="submit" value="Envoyer">
+    </form>
+</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
     $(document).ready(function () {

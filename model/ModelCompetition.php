@@ -16,7 +16,6 @@ class ModelCompetition {
     public function getCompetitionList() {
         $listCompetition = array();
         $competitions = $this->_dbConnexion->requete("SELECT * FROM competition");
-        var_dump($competitions);
         foreach ($competitions as $competition) {
             $tempCompetition = new Competition($competition->id, $competition->denomination, $competition->date, $competition->idClub, $competition->idCentreDeBowling);
             array_push($listCompetition, $tempCompetition);

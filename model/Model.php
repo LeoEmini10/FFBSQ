@@ -45,7 +45,7 @@ class Model {
             }
         }
     }
-        
+      
     public function rechercherClub($nom) {
         $listClubs = $this->getClubList();
         $listClubRecherche = array();

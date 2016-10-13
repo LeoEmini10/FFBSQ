@@ -17,6 +17,16 @@
     <?php endforeach; ?>
 </div>
 
+<form action="action_page.php">
+  nom du club:<br>
+  <input type="text" name="" value="">
+  <br>
+  addresse:<br>
+  <input type="text" name="" value="">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
     $(document).ready(function () {

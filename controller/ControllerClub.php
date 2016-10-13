@@ -1,13 +1,13 @@
 <?php
 
-include_once("model/Model.php");
+include_once("model/ModelClub.php");
 
-class Controller {
+class ControllerClub {
 
     public $_model;
 
     public function __construct() {
-        $this->_model = new Model();
+        $this->_model = new ModelClub();
     }
 
     public function invoke() {
@@ -17,6 +17,7 @@ class Controller {
                     $clubs = $this->_model->rechercherClub($_GET['nom']);
                     if(empty($clubs)){
                         $clubs = $this->_model->getClubList();
+                        $centresDeBowling = $this->_model->getCentresDeBowling();
                         include 'view/listeClub.php';
                     }
                     else

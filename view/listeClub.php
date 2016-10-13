@@ -18,14 +18,27 @@
 </div>
 
 <form action="action_page.php">
-  nom du club:<br>
-  <input type="text" name="" value="">
-  <br>
-  addresse:<br>
-  <input type="text" name="" value="">
-  <br><br>
-  <input type="submit" value="Submit">
+    nom du club:<br>
+    <input type="text" name="" value="">
+    <br>
+    addresse:<br>
+    <input type="text" name="" value="">
+    <br>
+    mail<br>
+    <input type="mail" name="" value="">
+    <br>
+    centre de bowling :<br>
+    <SELECT name="centreDeBowling" size="1">
+        <OPTION>lundi
+        <OPTION>mardi
+        <OPTION>mercredi
+        <OPTION>jeudi
+        <OPTION>vendredi
+    </SELECT>
+    <br><br>
+    <input type="submit" value="Submit">
 </form> 
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>

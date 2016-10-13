@@ -36,15 +36,22 @@
                 <h3 class="text-muted">FFBSQ</h3>
                 <nav>
                     <ul class="nav nav-justified">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="index.php?action=licences&club=1">Club</a></li>
-                        <li><a href="#">Compétition</a></li>
+                        <li class="active"><a href="#">Compétition</a></li>
                         <li><a href="#">Downloads</a></li>
  
                     </ul>
                 </nav>
             </div>
+
             <!-- Jumbotron -->
             <div class="jumbotron">
+                        <?php
+        include_once("controller/ControllerCompetition.php");
+
+        $controllerCompetition = new ControllerCompetition();
+        $controllerCompetition->invoke();
+        ?>
             </div>
         </div> <!-- /container -->

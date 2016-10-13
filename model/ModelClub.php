@@ -9,16 +9,16 @@
 
 //autoloader
 /**/
-spl_autoload_extensions(".php");
-spl_autoload_register();
+include_once "model/Database.php";
+include_once "model/Club.php";
 
 //Classe Model récupérant les données de la BD
-class Model {
+class ModelClub {
 
     private $_dbConnexion;
 
     public function __construct() {
-        $this->_dbConnexion = new Database('localhost', 'root', '', 'FFBSQ');
+        $this->_dbConnexion = new Database('localhost', 'root', '', 'ffbsq');
     }
 
     public function getClubList() {
@@ -56,6 +56,17 @@ class Model {
             }
         }
         return $listClubRecherche;
+    }
+
+    public function getCentresDeBowling() {
+        $centresDeBowling= array();
+        $centres = $this->_dbConnexion->requete("SELECT * FROM centredebowling");
+        foreach ($centres as $centre) {
+            $tempsCentres = new CentreDeBowling($centre->id, $centre->nom);
+            array_push($centresDeBowling, $tempCentre);
+        }
+        return $centresDeBowling;
+        
     }
 
 }

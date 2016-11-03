@@ -10,12 +10,15 @@ foreach ($competitions as $uneCompetition):
 <?php endforeach; ?>
 </div>
 <div class="jumbotron">
-    <form>
+    <form action="ajouterCompetition.php">
         Dénomination:<br>
         <input type="text" name="denomination">
         <br>
         Date:<br>
         <input type="date" name="date">
+        <br>
+        Club :<br>
+        <input type="">
         <br><br>
         <input type="submit" value="Envoyer">
     </form>

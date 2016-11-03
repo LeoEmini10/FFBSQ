@@ -1,3 +1,5 @@
+<h2>Les compétitions existantes:</h2>
+<br>
 <?php
 //var_dump($db->requete("Select * from livre"));
 foreach ($competitions as $uneCompetition):
@@ -18,9 +20,15 @@ foreach ($competitions as $uneCompetition):
         <input type="date" name="date">
         <br>
         Club :<br>
-        <input type="">
+        <SELECT name="club" size="1">
+            <?php
+            var_dump($clubs);
+            foreach ($clubs as $unClub):
+               echo '<OPTION>' .$unClub->getNom() . '</OPTION>';
+            endforeach; ?>
+        </SELECT>
         <br><br>
-        <input type="submit" value="Envoyer">
+        <input type="submit" value="Ajouter">
     </form>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

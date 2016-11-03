@@ -36,7 +36,7 @@
                 <h3 class="text-muted">FFBSQ</h3>
                 <nav>
                     <ul class="nav nav-justified">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="index.php?action=licences&club=1">Club</a></li>
                         <li class="active"><a href="#">Compétition</a></li>
                         <li><a href="#">Downloads</a></li>

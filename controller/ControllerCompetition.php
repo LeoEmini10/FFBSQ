@@ -33,7 +33,12 @@ class ControllerCompetition {
                 case "ajouterCompetition":
                     $denomination = $_POST["denomination"];
                     $date = $_POST["date"];
-                    
+                    $club = $_POST["club"];
+                    $centreDeBowlingAvant = $_POST["centreDeBowling"];
+                    $centreDeBowling = substr($centreDeBowlingAvant, 0, 1);
+                    $categorieAvant = $_POST["categorie"];
+                    $categorie = substr($categorieAvant, 0, 1);
+                    $competition= $this->_model->ajouterCompetition($denomination, $date, $club, $centreDeBowling, $categorie);
                     //$competition = $this->_model->getCompetition($_GET['competition']);
                     include 'view/listeCompetition.php';
                     break;

@@ -65,7 +65,7 @@ foreach ($lesLicences as $uneLicence) {
         <SELECT name="categorie" size="1">
             <?php
             foreach ($categories as $unCategorie):
-                echo '<OPTION>' .$unCategorie->getId() ." - "  .$unCategorie->getDescription() ." de " .$unCategorie->getAgeMin() ." à " .$unCategorie->getAgeMax() ."ans ". '</OPTION>';
+                echo '<OPTION>' .$unCategorie->getId() ." - "  .$unCategorie->getDescription() ." de " .$unCategorie->getAgeMin() ." à " .$unCategorie->getAgeMax() ." ans ". '</OPTION>';
             endforeach;
             ?>
         </SELECT>

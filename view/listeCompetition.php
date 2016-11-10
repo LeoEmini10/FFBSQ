@@ -12,7 +12,7 @@ foreach ($competitions as $uneCompetition):
 <?php endforeach; ?>
 </div>
 <div class="jumbotron">
-    <form action="ajouterCompetition.php">
+    <form action="competition.php?action=ajouterCompetition">
         Dénomination:<br>
         <input type="text" name="denomination">
         <br>
@@ -22,9 +22,16 @@ foreach ($competitions as $uneCompetition):
         Club :<br>
         <SELECT name="club" size="1">
             <?php
-            var_dump($clubs);
             foreach ($clubs as $unClub):
-               echo '<OPTION>' .$unClub->getNom() . '</OPTION>';
+               echo '<OPTION>' .$unClub->getId() . " - " .$unClub->getNom() . '</OPTION>';
+            endforeach; ?>
+        </SELECT>
+        <br>
+        CentreDeBowling :<br>
+        <SELECT name="centreDeBowling" size="1">
+            <?php
+            foreach ($centreDeBowling as $unCentreDeBowling):
+               echo '<OPTION>' .$unCentreDeBowling->getId() . " - " .$unCentreDeBowling->getNom() . '</OPTION>';
             endforeach; ?>
         </SELECT>
         <br><br>

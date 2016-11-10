@@ -16,8 +16,8 @@ class ModelCentreDeBowling {
 
     public function getCentreDeBowlingList() {
         $listCentreDeBowling = array();
-        $centreDeBowling = $this->_dbConnexion->requete("SELECT * FROM centredebowling");
-        foreach ($centreDeBowlings as $centreDeBowling) {
+        $centresDeBowling = $this->_dbConnexion->requete("SELECT * FROM centredebowling");
+        foreach ($centresDeBowling as $centreDeBowling) {
             $tempCentreDeBowling = new CentreDeBowling($centreDeBowling->id, $centreDeBowling->nom);
             array_push($listCentreDeBowling, $tempCentreDeBowling);
         }

@@ -3,15 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/wamp64/www/FFBSQ/competition.php</file>
-            <file>file:/D:/wamp64/www/FFBSQ/view/listeLicence.php</file>
-            <file>file:/D:/wamp64/www/FFBSQ/model/ModelCompetition.php</file>
-            <file>file:/D:/wamp64/www/FFBSQ/model/Competition.php</file>
-            <file>file:/D:/wamp64/www/FFBSQ/index.php</file>
-            <file>file:/D:/wamp64/www/FFBSQ/view/listeCompetition.php</file>
-            <file>file:/D:/wamp64/www/FFBSQ/view/listeClub.php</file>
-            <file>file:/D:/wamp64/www/FFBSQ/club.php</file>
-            <file>file:/D:/wamp64/www/FFBSQ/controller/ControllerCompetition.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/model/Licence.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/licence.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/club.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/controller/ControllerCompetition.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/model/ModelClub.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/view/listeLicence.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/model/Database.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/model/ModelLicence.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/model/ModelCompetition.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/view/listeCompetition.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/controller/ControllerLicence.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/competition.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/controller/ControllerClub.php</file>
+            <file>file:/D:/UwAmp/www/FFBSQ/view/listeClub.php</file>
         </group>
     </open-files>
 </project-private>

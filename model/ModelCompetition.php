@@ -4,14 +4,13 @@
 //spl_autoload_register();
 include_once "Database.php";
 include_once "model/Competition.php";
-include_once "model/Club.php";
 
 class ModelCompetition {
 
     private $_dbConnexion;
 
     public function __construct() {
-        $this->_dbConnexion = new Database('localhost', 'root', '', 'ffbsq');
+        $this->_dbConnexion = new Database('localhost', 'root', 'root', 'ffbsq');
     }
 
     public function getCompetitionList() {

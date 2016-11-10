@@ -13,7 +13,7 @@ class ModelLicence {
         $this->_dbConnexion = new Database('localhost', 'root', '', 'ffbsq');
     }
 
-    public function getLicencesList() {
+    public function getLicenceList() {
         $listLicence = array();
         $licences = $this->_dbConnexion->requete("SELECT * FROM licence");
         foreach ($licences as $licence) {
@@ -23,7 +23,7 @@ class ModelLicence {
         return $listLicence;
     }
 
-    public function getLicences($id) {
+    public function getLicence($id) {
         $listLicence = $this->getLicencesList();
         foreach ($listLicence as $licence) {
             if ($licence->getNumero() == $numero) {

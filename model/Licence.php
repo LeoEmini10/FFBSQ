@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Description of Club
- *
- * @author Tissot David
- */
 class Licence {
 
     private $numero;

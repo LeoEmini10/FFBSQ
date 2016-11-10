@@ -38,9 +38,9 @@
                 <nav>
                     <ul class="nav nav-justified">
                         <li><a href="#">Home</a></li>
-                        <li class="active"><a href="#">Club</a></li>
-                        <li><a href="#">Compétition</a></li>
-                        <li><a href="#">Licence</a></li>
+                        <li><a href="club.php">Club</a></li>
+                        <li><a href="competition.php?action=competitions">Compétition</a></li>
+                        <li class="active"><a href="#">Licence</a></li>
  
                     </ul>
                 </nav>

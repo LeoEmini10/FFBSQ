@@ -17,7 +17,7 @@
     <?php endforeach; ?>
 </div>
 
-<form action="action_page.php">
+<form action="club.php?action=ajouterClub" method="post">
     nom du club:<br>
     <input type="text" name="nom" value="">
     <br>
@@ -25,7 +25,7 @@
     <input type="text" name="addresse" value="">
     <br>
     mail<br>
-    <input type="mail" name="mail" value="">
+    <input type="mail" name="email" value="">
     <br>
     centre de bowling :<br>
     <SELECT name="centreDeBowling" size="1">

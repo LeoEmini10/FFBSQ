@@ -39,7 +39,7 @@
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="index.php?action=licences&club=1">Club</a></li>
                         <li><a href="competition.php?action=competitions">Compétition</a></li>
-                        <li><a href="#">Downloads</a></li>
+                        <li><a href="licence.php">Licence</a></li>
  
                     </ul>
                 </nav>

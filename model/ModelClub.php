@@ -5,8 +5,6 @@
  *
  * @author Tissot David
  */
-
-
 //autoloader
 /**/
 include_once "model/Database.php";
@@ -30,7 +28,7 @@ class ModelClub {
             $tempClub = new Club($club->id, $club->nom, $club->adresse, $club->email);
             foreach ($licences as $licence) {
                 if ($licence->idClub == $tempClub->getId()) {
-                    $tempClub->ajouterLicence(new Licence($licence->numero, $licence->nomResp, $licence->prenomResp, $licence->idClub));
+                    $tempClub->ajouterLicence(new Licence($licence->numero, $licence->annee, $licence->nom, $licence->prenom, $licence->tel, $licence->idPratiquant, $licence->idClub, $licence->idNiveau, $licence->idCategorie));
                 }
             }
             array_push($listClubs, $tempClub);

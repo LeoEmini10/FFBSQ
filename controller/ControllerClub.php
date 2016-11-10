@@ -1,13 +1,14 @@
 <?php
 
 include_once("model/ModelClub.php");
-
+include_once("model/ModelCentreDeBowling.php");
 class ControllerClub {
 
     public $_model;
 
     public function __construct() {
         $this->_model = new ModelClub();
+        $this->_modelCentreDeBowling = new ModelCentreDeBowling();
     }
 
     public function invoke() {
@@ -17,18 +18,22 @@ class ControllerClub {
                     $clubs = $this->_model->rechercherClub($_GET['nom']);
                     if(empty($clubs)){
                         $clubs = $this->_model->getClubList();
-                        $centresDeBowling = $this->_model->getCentresDeBowling();
+                        $centresDeBowling = $this->_modelCentreDeBowling->getCentreDeBowlingList();
                         include 'view/listeClub.php';
                     }
                     else
                     {
-                       include 'view/listeClub.php';   
+                        include 'view/listeClub.php';   
                     }        
                     break;
                 case "licences":
                     $club = $this->_model->getClub($_GET['club']);
                     include 'view/listeLicence.php';
-                    break;
+                    break;    
+                case "ajouterClub":
+                    $nom = $_POST["nom"];
+                    $addresse = $_POST["addresse"];
+                    $mail = $_POST["mail"];
                 default:
                     echo "Erreur";
             }

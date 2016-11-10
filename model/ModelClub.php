@@ -25,7 +25,7 @@ class ModelClub {
         $clubs = $this->_dbConnexion->requete("SELECT * FROM Club");
         $licences = $this->_dbConnexion->requete("SELECT * FROM Licence");
         foreach ($clubs as $club) {
-            $tempClub = new Club($club->id, $club->nom, $club->adresse, $club->email);
+            $tempClub = new Club($club->id, $club->nom, $club->adresse, $club->email ,$club->idCentreDeBowling);
             foreach ($licences as $licence) {
                 if ($licence->idClub == $tempClub->getId()) {
                     $tempClub->ajouterLicence(new Licence($licence->numero, $licence->annee, $licence->nom, $licence->prenom, $licence->tel, $licence->idPratiquant, $licence->idClub, $licence->idNiveau, $licence->idCategorie));

@@ -11,13 +11,15 @@ class Club {
     private $nom;
     private $adresse;
     private $email;
+    private $idCentreDeBowling;
     private $lesLicences;
 
-    public function __construct($p_id, $p_nom, $p_adresse, $p_email) {
+    public function __construct($p_id, $p_nom, $p_adresse, $p_email,$p_idCentreDeBowling) {
         $this->id = $p_id;
         $this->nom = $p_nom;
         $this->adresse = $p_adresse;
         $this->email = $p_email;
+        $this->idCentreDeBowling = $p_idCentreDeBowling;
     }
 
     public function ajouterLicence($p_laLicence) {
@@ -38,5 +40,8 @@ class Club {
 
     public function getId() {
         return $this->id;
+    }
+    public function getIdCentreDeBowling() {
+        return $this->idCentreDeBowling;
     }
 }

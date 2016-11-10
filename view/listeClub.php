@@ -19,21 +19,21 @@
 
 <form action="action_page.php">
     nom du club:<br>
-    <input type="text" name="" value="">
+    <input type="text" name="nom" value="">
     <br>
     addresse:<br>
-    <input type="text" name="" value="">
+    <input type="text" name="addresse" value="">
     <br>
     mail<br>
-    <input type="mail" name="" value="">
+    <input type="mail" name="mail" value="">
     <br>
     centre de bowling :<br>
     <SELECT name="centreDeBowling" size="1">
-        <OPTION>lundi
-        <OPTION>mardi
-        <OPTION>mercredi
-        <OPTION>jeudi
-        <OPTION>vendredi
+        <?php
+        foreach ($centresDeBowling as $unCentreDeBowling):
+            echo '<OPTION>' .$unCentreDeBowling->getId() ." - " .$unCentreDeBowling->getNom() . '</OPTION>';
+        endforeach;
+        ?>
     </SELECT>
     <br><br>
     <input type="submit" value="Submit">

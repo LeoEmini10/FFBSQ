@@ -24,15 +24,17 @@ foreach ($competitions as $uneCompetition):
             <?php
             foreach ($clubs as $unClub):
                echo '<OPTION>' .$unClub->getId() . " - " .$unClub->getNom() . '</OPTION>';
-            endforeach; ?>
+            endforeach;
+            ?>
         </SELECT>
         <br>
-        CentreDeBowling :<br>
+        Centre De Bowling :<br>
         <SELECT name="centreDeBowling" size="1">
             <?php
-            foreach ($centreDeBowling as $unCentreDeBowling):
-               echo '<OPTION>' .$unCentreDeBowling->getId() . " - " .$unCentreDeBowling->getNom() . '</OPTION>';
-            endforeach; ?>
+            foreach ($centresDeBowling as $unCentreDeBowling):
+               echo '<OPTION>' .$unCentreDeBowling->getId() ." - " .$unCentreDeBowling->getNom(). '</OPTION>';
+            endforeach;
+             ?>
         </SELECT>
         <br><br>
         <input type="submit" value="Ajouter">

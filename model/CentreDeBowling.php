@@ -13,5 +13,8 @@ class CentreDeBowling {
     public function getNom() {
         return $this->nom;
     }
-
+    
+    public function getId() {
+        return $this->id;
+    }
 }

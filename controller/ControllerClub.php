@@ -33,7 +33,10 @@ class ControllerClub {
                 case "ajouterClub":
                     $nom = $_POST["nom"];
                     $addresse = $_POST["addresse"];
-                    $mail = $_POST["mail"];
+                    $email = $_POST["email"];
+                    $centreDeBowlingAvant = $_POST["centreDeBowling"];
+                    $centreDeBowling = substr($centreDeBowlingAvant,0,1);
+                    $club = $this->_model->ajouterClub($nom, $addresse, $email, $centreDeBowling);
                 default:
                     echo "Erreur";
             }

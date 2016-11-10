@@ -11,6 +11,10 @@ class Niveau {
     }
 
     public function getDescription() {
-        return $this->id . " " . $this->libelle ;
+        return $this->libelle ;
+    }
+    
+    public function getId() {
+        return $this->id;
     }
 }

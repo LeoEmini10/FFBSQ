@@ -6,7 +6,7 @@ include_once "Database.php";
 include_once "model/Niveau.php";
 
 
-class ModelCompetition {
+class ModelNiveau {
 
     private $_dbConnexion;
 
@@ -16,7 +16,7 @@ class ModelCompetition {
 
     public function getNiveauList() {
         $listNiveau = array();
-        $niveau = $this->_dbConnexion->requete("SELECT * FROM niveau");
+        $niveaux = $this->_dbConnexion->requete("SELECT * FROM niveau");
         foreach ($niveaux as $niveau) {
             $tempNiveau = new Niveau($niveau->id, $niveau->libelle);
             array_push($listNiveau, $tempNiveau);

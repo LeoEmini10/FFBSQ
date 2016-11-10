@@ -18,6 +18,10 @@ class Pratiquant {
     }
 
     public function getDescription() {
-        return $this->nom . " " . $this->prenom . " " .  $this->adresse . " " .  $this->email ;
+        return $this->nom . " " . $this->prenom ;
+    }
+    
+    public function getId() {
+        return $this->id;
     }
 }

@@ -16,9 +16,9 @@ class ModelCategorie {
 
     public function getCategorieList() {
         $listCategorie = array();
-        $categorie = $this->_dbConnexion->requete("SELECT * FROM categorie");
+        $categories = $this->_dbConnexion->requete("SELECT * FROM categorie");
         foreach ($categories as $categorie) {
-            $tempCategorie = new Categorie($categorie->id, $categorie->libelle, $categorie->ageMin);
+            $tempCategorie = new Categorie($categorie->id, $categorie->libelle, $categorie->ageMin, $categorie->ageMax);
             array_push($listCategorie, $tempCategorie);
         }
         return $listCategorie;

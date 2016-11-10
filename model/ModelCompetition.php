@@ -4,6 +4,7 @@
 //spl_autoload_register();
 include_once "Database.php";
 include_once "model/Competition.php";
+include_once "model/Club.php";
 
 class ModelCompetition {
 
@@ -17,7 +18,7 @@ class ModelCompetition {
         $listCompetition = array();
         $competitions = $this->_dbConnexion->requete("SELECT * FROM competition");
         foreach ($competitions as $competition) {
-            $tempCompetition = new Competition($competition->id, $competition->denomination, $competition->date, $competition->idClub, $competition->idCentreDeBowling);
+            $tempCompetition = new Competition($competition->id, $competition->denomination, $competition->date, $competition->idClub, $competition->idCentreDeBowling, $competition->idCategorie);
             array_push($listCompetition, $tempCompetition);
         }
         return $listCompetition;

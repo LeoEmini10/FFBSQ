@@ -22,7 +22,7 @@ class Database {
         } else {
             $this->_host = 'localhost';
             $this->_username = 'root';
-            $this->_password = '';
+            $this->_password = 'root';
             $this->_database = 'ffbsq';
         }
         try {

@@ -11,6 +11,7 @@
 /**/
 include_once "model/Database.php";
 include_once "model/Club.php";
+include_once "model/Licence.php";
 
 //Classe Model récupérant les données de la BD
 class ModelClub {

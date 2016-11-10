@@ -67,6 +67,11 @@ class ModelClub {
         return $centresDeBowling;
         
     }
+    public function ajouterClub($nom,$addresse,$email,$centreDeBowling)
+    {
+         $sql = "insert into club(nom,adresse,email,idCentreDeBowling) VALUES('$nom','$addresse','$email','$centreDeBowling')";
+         $ajouterClub = $this->_dbConnexion->reqUpdate($sql);
+    }
 
 }
 

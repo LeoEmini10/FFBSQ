@@ -28,7 +28,7 @@ class ModelClub {
             $tempClub = new Club($club->id, $club->nom, $club->adresse, $club->email ,$club->idCentreDeBowling);
             foreach ($licences as $licence) {
                 if ($licence->idClub == $tempClub->getId()) {
-                    $tempClub->ajouterLicence(new Licence($licence->numero, $licence->annee, $licence->nom, $licence->prenom, $licence->tel, $licence->idPratiquant, $licence->idClub, $licence->idNiveau, $licence->idCategorie));
+                    $tempClub->ajouterLicence(new Licence($licence->numero, $licence->annee, $licence->nom, $licence->prenom, $licence->tel, $licence->idClub, $licence->idNiveau, $licence->idCategorie));
                 }
             }
             array_push($listClubs, $tempClub);

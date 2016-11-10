@@ -31,5 +31,10 @@ class ModelLicence {
             }
         }
     }
+    
+    public function ajouterLicence($annee, $nom, $prenom, $tel, $pratiquant, $club, $niveau, $categorie) {
+        $sql = "insert into licence (numero, annee, nom, prenom, tel, idPratiquant, idClub, idNiveau, idCategorie) VALUES ('$annee', '$nom', '$prenom', '$tel', '$pratiquant', '$club', '$niveau', '$categorie')";
+        $ajouterLicence = $this->_dbConnexion->reqUpdate($sql);
+    }
 }
 ?>

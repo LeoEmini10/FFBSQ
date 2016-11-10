@@ -34,6 +34,23 @@ class ControllerLicence {
                     //$competition = $this->_model->getCompetition($_GET['competition']);
                     include 'view/listeLicence.php';
                     break;
+                case "ajouterLicence":
+                    $annee = $_POST["annee"];
+                    $nom = $_POST["nom"];
+                    $prenom = $_POST["prenom"];
+                    $tel = $_POST["tel"];
+                    $pratiquantAvant = $_POST["pratiquant"];
+                    $pratiquant = substr($pratiquantAvant, 0, 1);
+                    $clubAvant = $_POST["club"];
+                    $club = substr($clubAvant, 0, 1);
+                    $niveauAvant = $_POST["niveau"];
+                    $niveau = substr($niveauAvant, 0, 1);
+                    $categorieAvant = $_POST["categorie"];
+                    $categorie = substr($categorieAvant, 0, 1);
+                    $licence = $this->_model->ajouterLicence($annee, $nom, $prenom, $tel, $pratiquant, $club, $niveau, $categorie);
+                    //$competition = $this->_model->getCompetition($_GET['competition']);
+                    include 'view/listeLicence.php';
+                    break;
                 default:
                     echo "Erreur";
             }

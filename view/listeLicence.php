@@ -21,18 +21,18 @@ foreach ($lesLicences as $uneLicence) {
 ?>
 
 <div class="jumbotron">
-    <form action="ajouterLicence.php">
+    <form action="licence.php?action=ajouterLicence" method = "post">
         Année:<br>
-        <input type="text" name="annee">
+        <input type="text" name="annee"/>
         <br>
         Nom:<br>
-        <input type="text" name="nom">
+        <input type="text" name="nom"/>
         <br>
         Prenom:<br>
-        <input type="text" name="prenom">
+        <input type="text" name="prenom"/>
         <br>
         Téléphone:<br>
-        <input type="text" name="tel">
+        <input type="text" name="tel"/>
         <br>
         Pratiquant :<br>
         <SELECT name="pratiquant" size="1">
@@ -70,7 +70,7 @@ foreach ($lesLicences as $uneLicence) {
             ?>
         </SELECT>
         <br><br>
-        <input type="submit" value="Ajouter">
+        <input type="submit" value="Ajouter"/>
     </form>
 </div>
 <a href="index.php"> Retour aux clubs</a> 

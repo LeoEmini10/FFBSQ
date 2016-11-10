@@ -31,6 +31,11 @@ class ModelCompetition {
             }
         }
     }
+    
+    public function ajouterCompetition($denomination, $date, $club, $centreDeBowling, $categorie) {
+        $sql = "insert into competition (denomination, date, idClub, idCentreDeBowling, idCategorie) VALUES ('$denomination', '$date', '$club', '$centreDeBowling', '$categorie')";
+        $ajoutCompetition = $this->_dbConnexion->reqUpdate($sql);
+    }
 }
 
 ?>

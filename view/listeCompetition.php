@@ -11,13 +11,14 @@ foreach ($competitions as $uneCompetition):
     </div>
 <?php endforeach; ?>
 </div>
+<?php var_dump($_POST["centreDeBowling"]); ?>
 <div class="jumbotron">
-    <form action="competition.php?action=ajouterCompetition">
+    <form action="competition.php?action=ajouterCompetition" method="post">
         Dénomination:<br>
-        <input type="text" name="denomination">
+        <input type="text" name="denomination"/>
         <br>
         Date:<br>
-        <input type="date" name="date">
+        <input type="date" name="date"/>
         <br>
         Club :<br>
         <SELECT name="club" size="1">
@@ -46,7 +47,7 @@ foreach ($competitions as $uneCompetition):
              ?>
         </SELECT>
         <br><br>
-        <input type="submit" value="Ajouter">
+        <input type="submit" value="Ajouter"/>
     </form>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

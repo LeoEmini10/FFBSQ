@@ -36,6 +36,15 @@ foreach ($competitions as $uneCompetition):
             endforeach;
              ?>
         </SELECT>
+        <br>
+        Catégorie :<br>
+        <SELECT name="centreDeBowling" size="1">
+            <?php
+            foreach ($categories as $uneCategorie):
+               echo '<OPTION>' .$uneCategorie->getId() ." - " .$uneCategorie->getDescription() ." de " .$uneCategorie->getAgeMin(). " à " .$uneCategorie->getAgeMax() ." ans" .'</OPTION>';
+            endforeach;
+             ?>
+        </SELECT>
         <br><br>
         <input type="submit" value="Ajouter">
     </form>
